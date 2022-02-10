@@ -1,0 +1,22 @@
+
+/* ============================================== 
+  Media Query : 610px
+============================================== */
+
+@media only screen and (max-width: 610px) {
+  .slick-slide {
+      margin: 0px !important;
+  }
+  .entry-content h1 {
+    font-size:24px !important;
+}
+.entry-content h2 {
+    font-size: 20px !important;
+}
+.entry-content h3 {
+    font-size: 16px !important;
+}
+
+}
+
+

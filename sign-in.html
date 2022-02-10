@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="x-ua-compatible" content="ie=edge">
+   <title>Tokenbay online marketplace</title>
+   <meta name="description" content="">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="images/x-icon" />
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet">
+   <!-- gulp:css -->
+   <link rel="stylesheet" href="assets/css/app.min.css">
+   <!-- endgulp -->
+</head>
+
+<body>
+   <div class="main overflow-hidden">
+      <div class="preloader">
+         <div class="preloader-lds"><img src="assets/images/preloader-img.gif" alt="title"></div>
+      </div>
+      <div class="cursor-direction bg-indigo-50"></div>
+      <!--  ====================== Header Area Start =============================  -->
+      <!--  ====================== Header Area Start =============================  -->
+      <header class="header-area absolute header-bottombar header-area left-0 right-0">
+         <div class="top-search relative z-9 hidden py-3 w-full bg-indigo-500">
+            <div class="container ">
+               <form action="#">
+                  <div class="flex items-center">
+                     <div class="flex-col">
+                        <a href="#"> <span class="cursor-pointer"><svg width="20" height="20" viewBox="0 0 20 20"
+                                 fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path
+                                    d="M19.9399 18.5624L13.4474 12.0699C14.4549 10.7675 14.9999 9.17496 14.9999 7.49997C14.9999 5.49498 14.2174 3.61498 12.8024 2.19749C11.3874 0.779996 9.50246 0 7.49997 0C5.49748 0 3.61248 0.782496 2.19749 2.19749C0.779996 3.61248 0 5.49498 0 7.49997C0 9.50246 0.782496 11.3874 2.19749 12.8024C3.61248 14.2199 5.49498 14.9999 7.49997 14.9999C9.17496 14.9999 10.765 14.4549 12.0674 13.4499L18.5599 19.9399C18.579 19.959 18.6016 19.9741 18.6264 19.9844C18.6513 19.9947 18.678 20 18.7049 20C18.7318 20 18.7585 19.9947 18.7834 19.9844C18.8083 19.9741 18.8309 19.959 18.8499 19.9399L19.9399 18.8524C19.959 18.8334 19.9741 18.8108 19.9844 18.7859C19.9947 18.761 20 18.7343 20 18.7074C20 18.6805 19.9947 18.6538 19.9844 18.6289C19.9741 18.6041 19.959 18.5815 19.9399 18.5624V18.5624ZM11.46 11.46C10.4 12.5174 8.99496 13.0999 7.49997 13.0999C6.00497 13.0999 4.59998 12.5174 3.53998 11.46C2.48249 10.4 1.89999 8.99496 1.89999 7.49997C1.89999 6.00497 2.48249 4.59748 3.53998 3.53998C4.59998 2.48249 6.00497 1.89999 7.49997 1.89999C8.99496 1.89999 10.4025 2.47999 11.46 3.53998C12.5174 4.59998 13.0999 6.00497 13.0999 7.49997C13.0999 8.99496 12.5174 10.4025 11.46 11.46Z"
+                                    fill="white" />
+                              </svg>
+                           </span></a>
+                     </div>
+                     <div class="flex-col w-full">
+                        <input
+                           class="bg-transparent appearance-none  text-white  w-full py-2 px-4 placeholder-coolGray-400 leading-tight focus:outline-none  focus:border-purple-500"
+                           type="text" placeholder="Search here...">
+                     </div>
+                     <div class="flex-col">
+                        <button type="button" class="input-group-addon close-search close-hover">
+                           <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M21 21L1 1M1 21L21 1L1 21Z" stroke="white" stroke-width="2"
+                                 stroke-linecap="round" stroke-linejoin="round" />
+                           </svg>
+                        </button>
+                     </div>
+                  </div>
+               </form>
+            </div>
+         </div>
+         <div class="container ">
+            <div class="header-area-inner  py-4 lg:py-2 relative  z-20">
+               <nav class="header-nav flex items-center justify-between relative">
+                  <div class="header-logo">
+                     <a href="index.html" class="flex items-center flex-shrink-0 mr-6">
+                        <img src="assets/images/header-logo.svg" alt="header-logo">
+                     </a>
+                  </div>
+                  <div class="flex-grow lg:flex lg:items-center lg:w-auto">
+                     <ul
+                        class="toggle-menu-class dropdown-menu justify-end bg-white lg:bg-transparent  shadow lg:shadow-none absolute lg:relative inset-x-0 hidden lg:flex lg:flex-grow items-center mt-10 lg:mt-0 mobile-hover">
+                        <li class="relative dropdown lg:mr-4">
+                           <a class=" arrow lg:p-5 px-5 pt-5 flex items-center text-base text-coolGray-600 hover:text-indigo-500 font-medium "
+                              href="#"> Home
+                              <span class="hidden lg:block  ml-2"><svg width="14" height="11" viewBox="0 0 11 7"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.25 0.9L5.5 4.15L8.75 0.9L10.05 1.55L5.5 6.1L0.95 1.55L2.25 0.9Z"
+                                       fill="black" />
+                                 </svg>
+                              </span> <span
+                                 class="leading-6 text-2xl text-center  absolute right-5   block lg:hidden toggle">+</span></a>
+                           <ul
+                              class="hidden lg:mt-2 lg:block bg-white  lg:absolute top-full lg:shadow lg:w-48 px-5 submenu lg:border-t-2 border-indigo-500">
+                              <li class="pt-5"><a
+                                    class=" leading-none flex items-center whitespace-nowrap text-coolGray-600 font-normal transition duration-500 hover:text-indigo-500"
+                                    href="index.html">Home v1 </a></li>
+                              <li class="pt-5"><a
+                                    class=" leading-none flex items-center whitespace-nowrap text-coolGray-600 font-normal transition duration-500 hover:text-indigo-500"
+                                    href="index-v2.html">Home v2</a></li>
+                           </ul>
+                        </li>
+                        <li class="relative dropdown lg:mr-4">
+                           <a class=" arrow lg:p-5 px-5 pt-2 flex items-center text-coolGray-900 text-base font-medium hover:text-indigo-500"
+                              href="#"> Explore <span class="hidden lg:block  ml-2"><svg width="14" height="11"
+                                    viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.25 0.9L5.5 4.15L8.75 0.9L10.05 1.55L5.5 6.1L0.95 1.55L2.25 0.9Z"
+                                       fill="black" />
+                                 </svg>
+                              </span> <span
+                                 class="leading-6 text-2xl text-center  absolute right-5  block lg:hidden toggle">+</span></a>
+                           <ul
+                              class="hidden lg:mt-2 lg:block bg-white lg:absolute top-full lg:shadow lg:w-48 px-5 submenu lg:border-t-2 border-indigo-500">
+                              <li class="pt-5"><a
+                                    class="leading-none flex items-center whitespace-nowrap text-coolGray-600 font-normal transition duration-500 hover:text-indigo-500"
+                                    href="explore.html"> Explore v1</a></li>
+                              <li class="pt-5"><a
+                                    class="leading-none  flex items-center whitespace-nowrap text-coolGray-600 font-normal transition duration-500 hover:text-indigo-500"
+                                    href="explore-v2.html"> Explore v2</a></li>
+                              <li class="pt-5"><a
+                                    class="leading-none  flex items-center whitespace-nowrap text-coolGray-600 font-normal transition duration-500 hover:text-indigo-500"
+                                    href="single-item.html"> Item v1</a></li>
+                              <li class="pt-5"><a
+                                    class="leading-none flex items-center whitespace-nowrap text-coolGray-600 font-normal transition duration-500 hover:text-indigo-500"
+                                    href="single-item-v2.html"> Item v2</a></li>
+                           </ul>
+                        </li>
+                        <li class="relative dropdown lg:mr-4">
+                           <a class="arrow lg:p-5 px-5 pt-2 flex items-center text-coolGray-900 text-base font-medium lg:text-indigo-500  hover:text-indigo-500"
+                              href="#"> Pages <span class="hidden lg:block  ml-2"><svg width="14" height="11"
+                                    viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.25 0.9L5.5 4.15L8.75 0.9L10.05 1.55L5.5 6.1L0.95 1.55L2.25 0.9Z"
+                                       fill="black" />
+                                 </svg>
+                              </span> <span
+                                 class="leading-6 text-2xl text-center  absolute right-5  block lg:hidden toggle">+</span></a>
+                           <ul
+                              class="hidden lg:mt-2 lg:block bg-white lg:absolute top-full lg:shadow lg:w-48  submenu  lg:border-t-2 border-indigo-500">
+                              <li class="pt-5"><a
+                                    class="leading-none px-5 flex items-center whitespace-nowrap text-coolGray-600 font-normal transition duration-500 hover:text-indigo-500"
+                                    href="collection.html"> Collection</a></li>
+                              <li class="pt-5"><a
+                                    class="leading-none  px-5 flex items-center whitespace-nowrap text-coolGray-600 font-normal transition duration-500 hover:text-indigo-500"
+                                    href="wallet.html"> Wallet</a></li>
+                              <li class="relative dropdown pt-5">
+                                 <a class="leading-none  flex items-center justify-between px-5 f whitespace-nowrap text-coolGray-600 font-medium transition duration-500 hover:text-indigo-500 arrow"
+                                    href="#"> Creator <span class="hidden lg:block"><svg width="14" height="14"
+                                          viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M0.9 8.75L4.15 5.5L0.9 2.25L1.55 0.95L6.1 5.5L1.55 10.05L0.9 8.75Z"
+                                             fill="black" />
+                                       </svg>
+                                    </span> <span
+                                       class="leading-6 text-2xl text-center bg-teal-300 absolute right-5 block lg:hidden toggle">+</span></a>
+                                 <ul
+                                    class="dropdown-submenu hidden lg:block bg-white lg:absolute top-0 left-full lg:shadow lg:w-48 px-5 submenu  lg:border-t-2 border-indigo-500">
+                                    <li class="pt-5"><a
+                                          class="leading-none  flex items-center whitespace-nowrap text-coolGray-600 font-normal transition duration-500 hover:text-indigo-500"
+                                          href="create.html">Create New</a></li>
+                                    <li class="pt-5"><a
+                                          class="leading-none  flex items-center whitespace-nowrap text-coolGray-600 font-normal transition duration-500 hover:text-indigo-500"
+                                          href="creator-published.html">Creator Published</a></li>
+                                    <li class="pt-5"><a
+                                          class="leading-none flex items-center whitespace-nowrap text-coolGray-600 font-normal transition duration-500 hover:text-indigo-500"
+                                          href="creator-activity.html">Creator Activity</a></li>
+                                    <li class="pt-5"><a
+                                          class="leading-none  flex items-center whitespace-nowrap text-coolGray-600 font-normal transition duration-500 hover:text-indigo-500"
+                                          href="creator-follower.html">Creator Followers</a></li>
+                                    <li class="pt-5"><a
+                                          class="leading-none flex items-center whitespace-nowrap text-coolGray-600 font-normal transition duration-500 hover:text-indigo-500"
+                                          href="creator-edit.html">Edit Profile</a></li>
+                                 </ul>
+                              </li>
+                              <li class="relative dropdown pt-5">
+                                 <a class="leading-none justify-between px-5  flex items-center whitespace-nowrap text-coolGray-600 font-medium transition duration-500 hover:text-indigo-500 arrow"
+                                    href="#"> User <span class="hidden lg:block"><svg width="14" height="14"
+                                          viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M0.9 8.75L4.15 5.5L0.9 2.25L1.55 0.95L6.1 5.5L1.55 10.05L0.9 8.75Z"
+                                             fill="black" />
+                                       </svg>
+                                    </span> <span
+                                       class="leading-6 text-2xl text-center  absolute right-5  block lg:hidden toggle">+</span></a>
+                                 <ul
+                                    class="dropdown-submenu hidden lg:block bg-white lg:absolute top-0 left-full lg:shadow lg:w-48 px-5 submenu  lg:border-t-2 border-indigo-500">
+                                    <li class="pt-5"><a
+                                          class="leading-none flex items-center whitespace-nowrap text-coolGray-600 font-normal transition duration-500 hover:text-indigo-500"
+                                          href="register.html">Register</a></li>
+                                    <li class="pt-5"><a
+                                          class="leading-none  flex items-center whitespace-nowrap text-coolGray-600 font-normal transition duration-500 hover:text-indigo-500"
+                                          href="sign-in.html">Sign in</a></li>
+                                    <li class="pt-5"><a
+                                          class="leading-none  flex items-center whitespace-nowrap text-coolGray-600 font-normal transition duration-500 hover:text-indigo-500"
+                                          href="forget-password.html">Forget Passwrd</a></li>
+                                 </ul>
+                              </li>
+                              <li class="pt-5"><a
+                                    class="leading-none px-5 flex items-center whitespace-nowrap text-coolGray-600 font-normal transition duration-500 hover:text-indigo-500"
+                                    href="privacy-policy.html"> Privacy Policy</a></li>
+                              <li class="pt-5"><a
+                                    class="leading-none px-5 flex items-center whitespace-nowrap text-coolGray-600 font-normal transition duration-500 hover:text-indigo-500"
+                                    href="terms.html"> Terms & Condition</a></li>
+                              <li class="pt-5"><a
+                                    class="leading-none px-5 flex items-center whitespace-nowrap text-coolGray-600 font-normal transition duration-500 hover:text-indigo-500"
+                                    href="my-account.html"> My Account </a></li>
+                              <li class="pt-5"><a
+                                    class="leading-none px-5 flex items-center whitespace-nowrap text-coolGray-600 font-normal transition duration-500 hover:text-indigo-500"
+                                    href="contact-us.html"> Contact</a></li>
+                              <li class="pt-5"><a
+                                    class="leading-none px-5 flex items-center whitespace-nowrap text-coolGray-600 font-normal transition duration-500 hover:text-indigo-500"
+                                    href="404.html"> 404</a></li>
+                           </ul>
+                        </li>
+                        <li class="relative lg:mr-4">
+                           <a class="arrow flex items-center lg:p-5 px-5 pt-2 text-coolGray-900 text-base font-medium hover:text-indigo-500"
+                              href="rankings.html">Ranking</a>
+                        </li>
+                        <li class="relative lg:mr-4">
+                           <a class="arrow flex items-center lg:p-5 px-5 pb-5 pt-3 text-coolGray-900 text-base font-medium  hover:text-indigo-500"
+                              href="contact-us.html">Contact</a>
+                        </li>
+                     </ul>
+                     <ul class="dropdown-menu right-side-menu flex flex-shrink-0 items-center">
+                        <li class="search-bar icon-set flex  relative ml-auto -left-14 lg:left-0">
+                           <a class=" search  text-base font-medium text-coolGray-900" href="#">
+                              <span>
+                                 <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                       d="M12.6729 10.3421C13.6423 9.02083 14.0764 7.38264 13.8885 5.7553C13.7007 4.12796 12.9046 2.63149 11.6596 1.56528C10.4146 0.499068 8.81257 -0.0582491 7.1739 0.00482408C5.53524 0.0678972 3.98084 0.746709 2.82168 1.90545C1.66253 3.0642 0.9841 4.61742 0.922132 6.25438C0.860164 7.89134 1.41922 9.49131 2.48746 10.7342C3.55571 11.9771 5.05435 12.7712 6.68356 12.9577C8.31278 13.1442 9.95242 12.7094 11.2745 11.7401H11.2734C11.3035 11.7801 11.3355 11.8181 11.3716 11.8551L15.2257 15.7051C15.4134 15.8928 15.668 15.9983 15.9336 15.9983C16.1991 15.9984 16.4538 15.8932 16.6417 15.7056C16.8295 15.5181 16.9351 15.2638 16.9352 14.9985C16.9353 14.7332 16.8299 14.4788 16.6422 14.2911L12.7881 10.4411C12.7523 10.405 12.7138 10.3725 12.6729 10.3421ZM12.9312 6.49815C12.9312 7.22042 12.7888 7.93562 12.5121 8.60291C12.2354 9.2702 11.8299 9.87651 11.3186 10.3872C10.8073 10.898 10.2004 11.3031 9.53235 11.5795C8.86434 11.8559 8.14838 11.9981 7.42534 11.9981C6.70229 11.9981 5.98633 11.8559 5.31832 11.5795C4.65032 11.3031 4.04335 10.898 3.53209 10.3872C3.02082 9.87651 2.61526 9.2702 2.33856 8.60291C2.06186 7.93562 1.91945 7.22042 1.91945 6.49815C1.91945 5.03946 2.49953 3.64051 3.53209 2.60906C4.56464 1.57761 5.96508 0.998147 7.42534 0.998147C8.88559 0.998147 10.286 1.57761 11.3186 2.60906C12.3511 3.64051 12.9312 5.03946 12.9312 6.49815Z"
+                                       fill="#111827"></path>
+                                 </svg>
+                              </span>
+                           </a>
+                        </li>
+                        <li class="relative dropdown hidden lg:block ">
+                           <a class=" arrow lg:p-5 px-5 pt-5 flex items-center text-base text-coolGray-600 hover:text-indigo-500 font-medium lg:text-indigo-500"
+                              href="#"> <span>
+                                 <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                       d="M14.9884 11.806L13.4288 8.92661V5.92857C13.4288 2.93525 10.9935 0.5 8.00022 0.5C5.0069 0.5 2.57165 2.93525 2.57165 5.92857V8.92661L1.01193 11.806C0.941203 11.9366 0.905604 12.0833 0.908625 12.2317C0.911646 12.3802 0.953183 12.5253 1.02917 12.6529C1.10515 12.7805 1.21298 12.8861 1.34208 12.9595C1.47118 13.0329 1.61712 13.0714 1.76561 13.0714H4.87043C4.86177 13.1664 4.8574 13.2618 4.85733 13.3571C4.85733 14.1907 5.18845 14.9901 5.77785 15.5795C6.36725 16.1689 7.16665 16.5 8.00018 16.5C8.83372 16.5 9.63312 16.1689 10.2225 15.5795C10.8119 14.9901 11.143 14.1907 11.143 13.3571C11.143 13.2607 11.1384 13.1656 11.1299 13.0714H14.2348C14.3832 13.0714 14.5292 13.0328 14.6582 12.9594C14.7873 12.8861 14.8951 12.7804 14.9711 12.6529C15.0471 12.5253 15.0886 12.3802 15.0916 12.2317C15.0946 12.0833 15.059 11.9366 14.9883 11.806H14.9884ZM10.0002 13.3571C10.0004 13.632 9.94402 13.9039 9.83446 14.156C9.7249 14.4081 9.56456 14.6349 9.36345 14.8222C9.16234 15.0095 8.92477 15.1534 8.66558 15.2449C8.40639 15.3363 8.13113 15.3733 7.85699 15.3536C7.58284 15.334 7.3157 15.258 7.07223 15.1304C6.82876 15.0029 6.61419 14.8266 6.4419 14.6124C6.26962 14.3983 6.14333 14.1509 6.0709 13.8858C5.99848 13.6206 5.98148 13.3434 6.02097 13.0714H9.97943C9.99317 13.166 10.0001 13.2615 10.0002 13.3571ZM2.24529 11.9286L3.71451 9.21625V5.92857C3.71451 4.79193 4.16604 3.70184 4.96976 2.89811C5.77349 2.09439 6.86358 1.64286 8.00022 1.64286C9.13686 1.64286 10.2269 2.09439 11.0307 2.89811C11.8344 3.70184 12.2859 4.79193 12.2859 5.92857V9.21625L13.7551 11.9286H2.24529Z"
+                                       fill="#111827"></path>
+                                 </svg>
+                              </span>
+                              <p
+                                 class="absolute flex items-center justify-center w-5 h-5 text-xs text-white bg-indigo-500 rounded-full right-2 top-3">
+                                 02</p>
+                           </a>
+                           <ul
+                              class="hidden lg:mt-2 lg:block bg-white  lg:absolute  lg:shadow  submenu lg:border-t-2 border-indigo-500 lg:w-72 top-full right-0  px-6 py-2">
+                              <li class="py-2 border-b border-coolGray-300">
+                                 <h4 class="text-coolGray-900 font-bold transition duration-500"><a
+                                       class="underline-hover" href="item-details.html">Visa Kitties Crypto Punk</a>
+                                 </h4>
+                                 <p class="text-coolGray-600 text-sm font-normal mb-1">Item listed for 1.4 ETH by @<a
+                                       href="creator.html"
+                                       class="font-medium transition underline-hover duration-500 hover:text-teal-400">Nikky_Smith</a>
+                                 </p>
+                                 <p
+                                    class="inline-flex items-center justify-center text-coolGray-600 text-sm font-normal">
+                                    <span class="mr-1">
+                                       <svg width="11" height="10" viewBox="0 0 11 10" fill="none"
+                                          xmlns="http://www.w3.org/2000/svg">
+                                          <path
+                                             d="M9.79316 0.556956C9.4725 0.239999 9.05093 0.0454109 8.6017 0.00701016C8.15247 -0.0313906 7.70399 0.0888233 7.33419 0.34676C8.5229 0.841677 9.49396 1.7476 10.0701 2.89914C10.2925 2.53399 10.386 2.10484 10.3358 1.68026C10.2856 1.25568 10.0946 0.860176 9.79316 0.556956Z"
+                                             fill="#4B5563"></path>
+                                          <path
+                                             d="M3.10358 0.420161C2.73531 0.127681 2.27272 -0.0198839 1.80312 0.00531738C1.33351 0.0305187 0.889377 0.226743 0.554529 0.556956C0.222445 0.891238 0.0257654 1.33655 0.00235797 1.80717C-0.0210495 2.27778 0.13047 2.74042 0.427744 3.106C0.963088 1.9149 1.91448 0.959948 3.10358 0.420161Z"
+                                             fill="#4B5563"></path>
+                                          <path
+                                             d="M4.76513 0.640367C3.89402 0.742128 3.06916 1.08708 2.38495 1.63574C1.70073 2.1844 1.1848 2.91461 0.896208 3.7428C0.607613 4.57099 0.55801 5.46369 0.753075 6.31876C0.948141 7.17382 1.37999 7.95669 1.99921 8.57778L1.14842 9.42857C1.11753 9.46012 1.09315 9.49744 1.07669 9.53841C1.06022 9.57937 1.05199 9.62318 1.05245 9.66733C1.05292 9.71148 1.06207 9.7551 1.0794 9.79571C1.09672 9.83632 1.12187 9.87313 1.15342 9.90401C1.18497 9.9349 1.22229 9.95928 1.26326 9.97574C1.30422 9.99221 1.34803 10.0004 1.39218 9.99998C1.43633 9.99952 1.47995 9.99036 1.52056 9.97303C1.56118 9.95571 1.59798 9.93056 1.62887 9.89901L2.51636 9.01152C3.32796 9.62568 4.31906 9.9558 5.33684 9.95098C6.35462 9.94615 7.34254 9.60665 8.14829 8.98482L9.06247 9.89901C9.1263 9.95367 9.2084 9.98223 9.29237 9.97899C9.37634 9.97575 9.456 9.94094 9.51542 9.88152C9.57484 9.82209 9.60965 9.74244 9.61289 9.65847C9.61613 9.5745 9.58757 9.4924 9.53291 9.42857L8.63541 8.54441C9.30891 7.85451 9.75243 6.97309 9.9051 6.0211C10.0578 5.06912 9.9121 4.09322 9.4881 3.2273C9.0641 2.36139 8.38253 1.6479 7.53693 1.18473C6.69132 0.721562 5.7231 0.53141 4.76513 0.640367ZM5.82612 9.25174C4.99687 9.36035 4.15444 9.20655 3.41706 8.81194C2.67968 8.41733 2.08439 7.80172 1.71474 7.05152C1.34509 6.30132 1.21965 5.45419 1.35602 4.62906C1.49239 3.80392 1.88373 3.04221 2.4751 2.45084C3.06647 1.85946 3.82819 1.46813 4.65332 1.33175C5.47846 1.19538 6.32558 1.32083 7.07578 1.69047C7.82599 2.06012 8.4416 2.65541 8.83621 3.39279C9.23082 4.13017 9.38462 4.97261 9.27601 5.80185C9.16143 6.67665 8.76111 7.48911 8.13724 8.11298C7.51338 8.73684 6.70092 9.13716 5.82612 9.25174Z"
+                                             fill="#4B5563"></path>
+                                          <path
+                                             d="M7.60778 6.0621L5.58589 5.06116V2.44539C5.58589 2.36575 5.55426 2.28937 5.49794 2.23306C5.44163 2.17674 5.36525 2.14511 5.28561 2.14511C5.20597 2.14511 5.1296 2.17674 5.07328 2.23306C5.01697 2.28937 4.98533 2.36575 4.98533 2.44539V5.44819L7.34087 6.61595C7.41254 6.6509 7.49517 6.65595 7.57056 6.62998C7.64596 6.60401 7.70796 6.54916 7.74291 6.47748C7.77786 6.40581 7.78291 6.32318 7.75694 6.24779C7.73098 6.17239 7.67612 6.11039 7.60445 6.07544L7.60778 6.0621Z"
+                                             fill="#4B5563"></path>
+                                       </svg>
+                                    </span>
+                                    1 mins ago
+                                 </p>
+                              </li>
+                              <li class="py-2 border-b border-coolGray-300">
+                                 <h4 class="text-coolGray-900 font-bold transition duration-500 hover:text-teal-400">
+                                    <a class="underline-hover" href="item-details.html">Visa Kitties Crypto Punk</a>
+                                 </h4>
+                                 <p class="text-coolGray-600 text-sm font-normal mb-1">Purchased by @<a
+                                       href="creator.html"
+                                       class="font-medium undelrine-hover transition duration-500 hover:text-teal-400">Philip_Hobs</a>
+                                    for 0.16 ETH from @<a href="creator.html"
+                                       class="font-medium underline-hover transition duration-500 hover:text-teal-400">Alex</a>
+                                 </p>
+                                 <p
+                                    class="inline-flex items-center justify-center text-coolGray-600 text-sm font-normal">
+                                    <span class="mr-1">
+                                       <svg width="11" height="10" viewBox="0 0 11 10" fill="none"
+                                          xmlns="http://www.w3.org/2000/svg">
+                                          <path
+                                             d="M9.79316 0.556956C9.4725 0.239999 9.05093 0.0454109 8.6017 0.00701016C8.15247 -0.0313906 7.70399 0.0888233 7.33419 0.34676C8.5229 0.841677 9.49396 1.7476 10.0701 2.89914C10.2925 2.53399 10.386 2.10484 10.3358 1.68026C10.2856 1.25568 10.0946 0.860176 9.79316 0.556956Z"
+                                             fill="#4B5563"></path>
+                                          <path
+                                             d="M3.10358 0.420161C2.73531 0.127681 2.27272 -0.0198839 1.80312 0.00531738C1.33351 0.0305187 0.889377 0.226743 0.554529 0.556956C0.222445 0.891238 0.0257654 1.33655 0.00235797 1.80717C-0.0210495 2.27778 0.13047 2.74042 0.427744 3.106C0.963088 1.9149 1.91448 0.959948 3.10358 0.420161Z"
+                                             fill="#4B5563"></path>
+                                          <path
+                                             d="M4.76513 0.640367C3.89402 0.742128 3.06916 1.08708 2.38495 1.63574C1.70073 2.1844 1.1848 2.91461 0.896208 3.7428C0.607613 4.57099 0.55801 5.46369 0.753075 6.31876C0.948141 7.17382 1.37999 7.95669 1.99921 8.57778L1.14842 9.42857C1.11753 9.46012 1.09315 9.49744 1.07669 9.53841C1.06022 9.57937 1.05199 9.62318 1.05245 9.66733C1.05292 9.71148 1.06207 9.7551 1.0794 9.79571C1.09672 9.83632 1.12187 9.87313 1.15342 9.90401C1.18497 9.9349 1.22229 9.95928 1.26326 9.97574C1.30422 9.99221 1.34803 10.0004 1.39218 9.99998C1.43633 9.99952 1.47995 9.99036 1.52056 9.97303C1.56118 9.95571 1.59798 9.93056 1.62887 9.89901L2.51636 9.01152C3.32796 9.62568 4.31906 9.9558 5.33684 9.95098C6.35462 9.94615 7.34254 9.60665 8.14829 8.98482L9.06247 9.89901C9.1263 9.95367 9.2084 9.98223 9.29237 9.97899C9.37634 9.97575 9.456 9.94094 9.51542 9.88152C9.57484 9.82209 9.60965 9.74244 9.61289 9.65847C9.61613 9.5745 9.58757 9.4924 9.53291 9.42857L8.63541 8.54441C9.30891 7.85451 9.75243 6.97309 9.9051 6.0211C10.0578 5.06912 9.9121 4.09322 9.4881 3.2273C9.0641 2.36139 8.38253 1.6479 7.53693 1.18473C6.69132 0.721562 5.7231 0.53141 4.76513 0.640367ZM5.82612 9.25174C4.99687 9.36035 4.15444 9.20655 3.41706 8.81194C2.67968 8.41733 2.08439 7.80172 1.71474 7.05152C1.34509 6.30132 1.21965 5.45419 1.35602 4.62906C1.49239 3.80392 1.88373 3.04221 2.4751 2.45084C3.06647 1.85946 3.82819 1.46813 4.65332 1.33175C5.47846 1.19538 6.32558 1.32083 7.07578 1.69047C7.82599 2.06012 8.4416 2.65541 8.83621 3.39279C9.23082 4.13017 9.38462 4.97261 9.27601 5.80185C9.16143 6.67665 8.76111 7.48911 8.13724 8.11298C7.51338 8.73684 6.70092 9.13716 5.82612 9.25174Z"
+                                             fill="#4B5563"></path>
+                                          <path
+                                             d="M7.60778 6.0621L5.58589 5.06116V2.44539C5.58589 2.36575 5.55426 2.28937 5.49794 2.23306C5.44163 2.17674 5.36525 2.14511 5.28561 2.14511C5.20597 2.14511 5.1296 2.17674 5.07328 2.23306C5.01697 2.28937 4.98533 2.36575 4.98533 2.44539V5.44819L7.34087 6.61595C7.41254 6.6509 7.49517 6.65595 7.57056 6.62998C7.64596 6.60401 7.70796 6.54916 7.74291 6.47748C7.77786 6.40581 7.78291 6.32318 7.75694 6.24779C7.73098 6.17239 7.67612 6.11039 7.60445 6.07544L7.60778 6.0621Z"
+                                             fill="#4B5563"></path>
+                                       </svg>
+                                    </span>
+                                    1 mins ago
+                                 </p>
+                              </li>
+                              <li class="pt-2">
+                                 <h4 class="text-coolGray-900 font-bold transition duration-500 hover:text-teal-400">
+                                    <a class="underline-hover" href="item-details.html">Jhon Doe</a></h4>
+                                 <p class="text-coolGray-600 text-sm font-normal mb-1">Purchased by @<a
+                                       href="creator.html"
+                                       class="font-medium underline-hover transition duration-500 hover:text-teal-400">Philip_Hobs</a>
+                                 </p>
+                                 <p
+                                    class="inline-flex items-center justify-center text-coolGray-600 text-sm font-normal">
+                                    <span class="mr-1">
+                                       <svg width="11" height="10" viewBox="0 0 11 10" fill="none"
+                                          xmlns="http://www.w3.org/2000/svg">
+                                          <path
+                                             d="M9.79316 0.556956C9.4725 0.239999 9.05093 0.0454109 8.6017 0.00701016C8.15247 -0.0313906 7.70399 0.0888233 7.33419 0.34676C8.5229 0.841677 9.49396 1.7476 10.0701 2.89914C10.2925 2.53399 10.386 2.10484 10.3358 1.68026C10.2856 1.25568 10.0946 0.860176 9.79316 0.556956Z"
+                                             fill="#4B5563"></path>
+                                          <path
+                                             d="M3.10358 0.420161C2.73531 0.127681 2.27272 -0.0198839 1.80312 0.00531738C1.33351 0.0305187 0.889377 0.226743 0.554529 0.556956C0.222445 0.891238 0.0257654 1.33655 0.00235797 1.80717C-0.0210495 2.27778 0.13047 2.74042 0.427744 3.106C0.963088 1.9149 1.91448 0.959948 3.10358 0.420161Z"
+                                             fill="#4B5563"></path>
+                                          <path
+                                             d="M4.76513 0.640367C3.89402 0.742128 3.06916 1.08708 2.38495 1.63574C1.70073 2.1844 1.1848 2.91461 0.896208 3.7428C0.607613 4.57099 0.55801 5.46369 0.753075 6.31876C0.948141 7.17382 1.37999 7.95669 1.99921 8.57778L1.14842 9.42857C1.11753 9.46012 1.09315 9.49744 1.07669 9.53841C1.06022 9.57937 1.05199 9.62318 1.05245 9.66733C1.05292 9.71148 1.06207 9.7551 1.0794 9.79571C1.09672 9.83632 1.12187 9.87313 1.15342 9.90401C1.18497 9.9349 1.22229 9.95928 1.26326 9.97574C1.30422 9.99221 1.34803 10.0004 1.39218 9.99998C1.43633 9.99952 1.47995 9.99036 1.52056 9.97303C1.56118 9.95571 1.59798 9.93056 1.62887 9.89901L2.51636 9.01152C3.32796 9.62568 4.31906 9.9558 5.33684 9.95098C6.35462 9.94615 7.34254 9.60665 8.14829 8.98482L9.06247 9.89901C9.1263 9.95367 9.2084 9.98223 9.29237 9.97899C9.37634 9.97575 9.456 9.94094 9.51542 9.88152C9.57484 9.82209 9.60965 9.74244 9.61289 9.65847C9.61613 9.5745 9.58757 9.4924 9.53291 9.42857L8.63541 8.54441C9.30891 7.85451 9.75243 6.97309 9.9051 6.0211C10.0578 5.06912 9.9121 4.09322 9.4881 3.2273C9.0641 2.36139 8.38253 1.6479 7.53693 1.18473C6.69132 0.721562 5.7231 0.53141 4.76513 0.640367ZM5.82612 9.25174C4.99687 9.36035 4.15444 9.20655 3.41706 8.81194C2.67968 8.41733 2.08439 7.80172 1.71474 7.05152C1.34509 6.30132 1.21965 5.45419 1.35602 4.62906C1.49239 3.80392 1.88373 3.04221 2.4751 2.45084C3.06647 1.85946 3.82819 1.46813 4.65332 1.33175C5.47846 1.19538 6.32558 1.32083 7.07578 1.69047C7.82599 2.06012 8.4416 2.65541 8.83621 3.39279C9.23082 4.13017 9.38462 4.97261 9.27601 5.80185C9.16143 6.67665 8.76111 7.48911 8.13724 8.11298C7.51338 8.73684 6.70092 9.13716 5.82612 9.25174Z"
+                                             fill="#4B5563"></path>
+                                          <path
+                                             d="M7.60778 6.0621L5.58589 5.06116V2.44539C5.58589 2.36575 5.55426 2.28937 5.49794 2.23306C5.44163 2.17674 5.36525 2.14511 5.28561 2.14511C5.20597 2.14511 5.1296 2.17674 5.07328 2.23306C5.01697 2.28937 4.98533 2.36575 4.98533 2.44539V5.44819L7.34087 6.61595C7.41254 6.6509 7.49517 6.65595 7.57056 6.62998C7.64596 6.60401 7.70796 6.54916 7.74291 6.47748C7.77786 6.40581 7.78291 6.32318 7.75694 6.24779C7.73098 6.17239 7.67612 6.11039 7.60445 6.07544L7.60778 6.0621Z"
+                                             fill="#4B5563"></path>
+                                       </svg>
+                                    </span>
+                                    1 mins ago
+                                 </p>
+                              </li>
+                           </ul>
+                        </li>
+                     </ul>
+                  </div>
+                  <button class="bg-coolGray-50 mobile-toggle block lg:hidden">
+                     <span class="bg-coolGray-600"></span>
+                     <span class="bg-coolGray-600"></span>
+                     <span class="bg-coolGray-600"></span>
+                  </button>
+               </nav>
+            </div>
+         </div>
+      </header>
+      <!--  ====================== Header Area End =============================  -->
+      <!--  ====================== Innerpage Area Start =============================  -->
+      <section data-aos="fade-in" data-aos-duration="500" class=" bg-cover py-14 md:py-28 innerpage-area"
+         style="background-image: url(assets/images/hero-banner-bg.svg);">
+         <div class="container mx-auto">
+            <div data-aos="fade-in" data-aos-duration="500" class="text-center page-title mt-12 lg:mt-0 lg:pt-24">
+               <h1 class="mb-2 font-bold text-4xl lg:text-7xl text-coolGray-900">Sign In</h1>
+               <ol class="flex justify-center mb-6 font-medium">
+                  <li class="px-2 text-base font-normal text-coolGray-600"><a href="index.html"
+                        class="font-normal underline-hover">Home</a></li>
+                  <li class="text-base font-normal text-coolGray-600">/</li>
+                  <li class="px-2 text-base font-bold text-coolGray-600 ">Sign In</li>
+               </ol>
+            </div>
+            <div data-aos="fade-in" data-aos-duration="500" class="relative  text-center banner-box">
+               <div class=" banner-dot hidden lg:block">
+                  <img class="absolute left-0 banner-dot-1 -top-28 top-bottom-animation-1"
+                     src="assets/images/hero-banner-dot-1.svg" alt="hero-banner-dot-1">
+                  <img class="absolute bottom-0 right-0 -top-48 banner-dot-2 top-bottom-animation-2"
+                     src="assets/images/hero-banner-dot-2.svg" alt="hero-banner-dot-2">
+               </div>
+            </div>
+         </div>
+      </section>
+      <!--  ====================== Innerpage Area End =============================  -->
+      <!--  ====================== Page Content Area Start =============================  -->
+      <div class="page-content-area">
+         <div class="container mx-auto">
+            <div class="forms-box lg:w-8/12 mx-auto">
+               <div class="login-box shadow-lg rounded-md p-12 sm:p-24">
+                  <h2 class="text-3xl pb-6 border-b font-bold text-coolGray-800">Login</h2>
+                  <form action="#">
+                     <div class="mb-4">
+                        <label class="text-coolGray-800 font-normal mb-4 text-base block pt-6">
+                           Username or Email Address *
+                        </label>
+                        <input
+                           class=" border border-coolGray-300 px-4 w-full leading-none h-12 focus:border-indigo-500 focus:outline-none rounded-md text-base font-normal placeholder-coolGray-800 text-coolGray-800"
+                           type="text">
+                     </div>
+                     <div class="mb-4">
+                        <label class="text-coolGray-800 font-normal  mb-4 text-base block ">
+                           Password *
+                        </label>
+                        <input
+                           class=" border border-coolGray-300 px-4 w-full leading-none h-12 focus:border-indigo-500 focus:outline-none rounded-md text-base font-normal placeholder-coolGray-800 text-coolGray-800"
+                           type="password">
+
+
+                     </div>
+                     <div class="lg:flex items-center justify-between  cursor-pointer mr-4 my-2 mt-8">
+                        <div class="flex mb-4 lg:mb-0">
+                           <input type="checkbox" id="checkbox"
+                              class="checkbox mr-2 w-6 h-6 rounded-sm border-coolGray-300" checked="">
+                           <label class="block text-coolGray-600 font-normal" for="checkbox">Remember Me</label>
+                        </div>
+                        <div class="flex-col">
+                           <a class="text-coolGray-800 font-medium underline-hover" href="forget-password.html">Forget
+                              Password ?</a>
+                        </div>
+
+                     </div>
+                     <div class="login-btn mt-4 md:mt-8">
+                        <a class="px-7 py-2 bg-indigo-500 text-white rounded-md " href="sign-in.html">Register</a>
+                     </div>
+                  </form>
+
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--  ====================== Page Content Area End =============================  -->
+      <!--  ====================== Footer Area Start =============================  -->
+      <footer class=" footer-area bg-bottom bg-cover md:py-28 py-14 relative"
+         style="background-image: url(assets/images/bg-footer.svg);">
+         <div class="footer-animation-background absolute top-0 w-full h-full bg-cover bg-center">
+            <img src="assets/images/footer-animation-bg.svg" alt="footer-animation-background">
+         </div>
+         <div class="container ">
+            <div class="footer-animation-icon hidden xl:block">
+               <div class="relative">
+                  <div class="flex-col">
+                     <img class="absolute -left-24 " src="assets/images/star-footer.svg" alt="images">
+                     <img class="absolute footer-icon-1 -left-36 top-28" src="assets/images/footer-dot.svg"
+                        alt="images">
+                  </div>
+                  <div class="flex-col">
+                     <img class="absolute -right-24 " src="assets/images/star-footer.svg" alt="images">
+                     <img class="absolute -right-28 top-28 footer-icon-2" src="assets/images/footer-dot.svg"
+                        alt="images">
+                     <img class="absolute right-0 top-60 footer-icon-3" src="assets/images/footer-icon-right-2.svg"
+                        alt="images">
+                  </div>
+               </div>
+            </div>
+            <div class="grid sm:grid-cols-2 gap-10 xl:grid-cols-12 ">
+               <div class="xl:col-span-5 ">
+                  <div data-aos="fade-in" data-aos-duration="500" class="footer-widgets">
+                     <h4 class="mb-6 text-2xl font-bold text-coolGray-900">About Us</h4>
+                     <p class="mb-6 text-base font-normal text-coolGray-600">Poetic taken a torn return emerged. Or
+                        thought. Variety a its parents time the oparents this as the of been logbook.</p>
+                     <div class="share-links">
+                        <ul>
+                           <li data-aos="fade-in" data-aos-duration="500" class="inline-block mr-2"><a
+                                 class="flex button-style-1     relative    overflow-hidden items-center justify-center  rounded-full h-9 w-9 bg-blue-50"
+                                 href="#"><svg width="9" height="16" viewBox="0 0 9 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                       d="M5.83333 9.2H7.7381L8.5 6H5.83333V4.4C5.83333 3.576 5.83333 2.8 7.35714 2.8H8.5V0.112C8.25162 0.0776001 7.31371 0 6.32324 0C4.25467 0 2.78571 1.3256 2.78571 3.76V6H0.5V9.2H2.78571V16H5.83333V9.2Z"
+                                       fill="white" />
+                                 </svg>
+                              </a></li>
+                           <li data-aos="fade-in" data-aos-duration="500" class="inline-block mr-2"><a
+                                 class="flex button-style-1     relative    overflow-hidden items-center justify-center  rounded-full h-9 w-9 bg-lightBlue-400"
+                                 href="#"><svg width="18" height="16" viewBox="0 0 21 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                       d="M20.5 1.89789C19.7645 2.21861 18.9744 2.43531 18.1438 2.53326C19.0008 2.0286 19.642 1.23432 19.9477 0.298631C19.1425 0.769299 18.2612 1.1006 17.3422 1.27812C16.7242 0.628768 15.9057 0.198364 15.0136 0.0537355C14.1216 -0.0908933 13.206 0.0583448 12.409 0.47828C11.6119 0.898215 10.9781 1.56535 10.6058 2.37611C10.2336 3.18688 10.1437 4.0959 10.3503 4.96206C8.7187 4.88144 7.12259 4.46412 5.66553 3.73718C4.20847 3.01023 2.92301 1.98991 1.89258 0.742437C1.54025 1.34053 1.33766 2.03398 1.33766 2.7725C1.33727 3.43734 1.50364 4.09199 1.82201 4.67838C2.14038 5.26477 2.60091 5.76476 3.16273 6.13398C2.51117 6.11358 1.87397 5.94032 1.30419 5.62863V5.68064C1.30413 6.6131 1.63189 7.51687 2.23186 8.23859C2.83184 8.96031 3.66707 9.45553 4.59583 9.64022C3.9914 9.8012 3.35769 9.82491 2.74258 9.70957C3.00462 10.5119 3.51506 11.2135 4.20243 11.7162C4.8898 12.2188 5.71969 12.4974 6.57593 12.5128C5.12242 13.6357 3.32735 14.2448 1.47948 14.2421C1.15215 14.2422 0.825091 14.2234 0.5 14.1858C2.37569 15.3726 4.55914 16.0024 6.78909 16C14.3378 16 18.4644 9.84739 18.4644 4.51132C18.4644 4.33796 18.46 4.16286 18.4521 3.9895C19.2548 3.41825 19.9476 2.71087 20.4982 1.90049L20.5 1.89789Z"
+                                       fill="white" />
+                                 </svg>
+                              </a></li>
+                           <li class="inline-block mr-2"><a
+                                 class="flex button-style-1     relative    overflow-hidden items-center justify-center  bg-red-500 rounded-full h-9 w-9"
+                                 href="#"><svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                       d="M8.49785 3.89523C6.22636 3.89523 4.39315 5.72847 4.39315 8C4.39315 10.2715 6.22636 12.1048 8.49785 12.1048C10.7693 12.1048 12.6025 10.2715 12.6025 8C12.6025 5.72847 10.7693 3.89523 8.49785 3.89523ZM8.49785 10.6678C7.02888 10.6678 5.8301 9.46899 5.8301 8C5.8301 6.53101 7.02888 5.3322 8.49785 5.3322C9.96681 5.3322 11.1656 6.53101 11.1656 8C11.1656 9.46899 9.96681 10.6678 8.49785 10.6678ZM12.7707 2.77047C12.2403 2.77047 11.812 3.19876 11.812 3.72911C11.812 4.25947 12.2403 4.68776 12.7707 4.68776C13.301 4.68776 13.7293 4.26147 13.7293 3.72911C13.7294 3.60318 13.7048 3.47845 13.6566 3.36207C13.6085 3.24569 13.5379 3.13995 13.4489 3.0509C13.3598 2.96185 13.2541 2.89124 13.1377 2.84312C13.0213 2.795 12.8966 2.77031 12.7707 2.77047ZM16.4991 8C16.4991 6.89525 16.5091 5.80051 16.4471 4.69777C16.385 3.4169 16.0928 2.28014 15.1562 1.3435C14.2176 0.404868 13.0829 0.114672 11.802 0.0526304C10.6973 -0.0094115 9.60258 0.000595291 8.49985 0.000595291C7.39512 0.000595291 6.30041 -0.0094115 5.19768 0.0526304C3.91684 0.114672 2.78009 0.40687 1.84348 1.3435C0.904861 2.28214 0.61467 3.4169 0.552629 4.69777C0.490589 5.80252 0.500595 6.89725 0.500595 8C0.500595 9.10275 0.490589 10.1995 0.552629 11.3022C0.61467 12.5831 0.906862 13.7199 1.84348 14.6565C2.78209 15.5951 3.91684 15.8853 5.19768 15.9474C6.30241 16.0094 7.39713 15.9994 8.49985 15.9994C9.60458 15.9994 10.6993 16.0094 11.802 15.9474C13.0829 15.8853 14.2196 15.5931 15.1562 14.6565C16.0948 13.7179 16.385 12.5831 16.4471 11.3022C16.5111 10.1995 16.4991 9.10475 16.4991 8ZM14.738 12.7192C14.5919 13.0834 14.4157 13.3556 14.1336 13.6358C13.8514 13.918 13.5812 14.0941 13.217 14.2402C12.1643 14.6585 9.66462 14.5644 8.49785 14.5644C7.33108 14.5644 4.82944 14.6585 3.77675 14.2422C3.41251 14.0961 3.14033 13.92 2.86015 13.6378C2.57796 13.3556 2.40184 13.0854 2.25575 12.7212C1.83948 11.6665 1.93354 9.16679 1.93354 8C1.93354 6.83321 1.83948 4.33152 2.25575 3.27881C2.40184 2.91456 2.57796 2.64238 2.86015 2.36219C3.14233 2.082 3.41251 1.90388 3.77675 1.75778C4.82944 1.3415 7.33108 1.43556 8.49785 1.43556C9.66462 1.43556 12.1663 1.3415 13.219 1.75778C13.5832 1.90388 13.8554 2.08 14.1356 2.36219C14.4177 2.64438 14.5939 2.91456 14.74 3.27881C15.1562 4.33152 15.0622 6.83321 15.0622 8C15.0622 9.16679 15.1562 11.6665 14.738 12.7192Z"
+                                       fill="white" />
+                                 </svg>
+                              </a></li>
+                           <li class="inline-block mr-2"><a
+                                 class="flex button-style-1     relative     overflow-hidden items-center justify-center  bg-blue-600 rounded-full h-9 w-9"
+                                 href="#"><svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                       d="M2.42299 3.85254C3.48502 3.85254 4.34598 2.99012 4.34598 1.92627C4.34598 0.862419 3.48502 0 2.42299 0C1.36095 0 0.5 0.862419 0.5 1.92627C0.5 2.99012 1.36095 3.85254 2.42299 3.85254Z"
+                                       fill="white" />
+                                    <path
+                                       d="M6.16174 5.3122V15.9991H9.47424V10.7142C9.47424 9.31969 9.73614 7.96919 11.4623 7.96919C13.1647 7.96919 13.1857 9.56355 13.1857 10.8022V16H16.5V10.1393C16.5 7.26048 15.8813 5.04809 12.5222 5.04809C10.9094 5.04809 9.82843 5.93463 9.38635 6.77363H9.34153V5.3122H6.16174ZM0.763664 5.3122H4.08143V15.9991H0.763664V5.3122Z"
+                                       fill="white" />
+                                 </svg>
+                              </a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class=" xl:col-span-3 ">
+                  <div data-aos="fade-in" data-aos-duration="500" class="footer-widgets">
+                     <h4 class="mb-6 text-2xl font-bold text-coolGray-900">Contact</h4>
+                     <p class="mb-4 text-base font-normal text-coolGray-600">12 New Elephant Road, P.O. 1334 NY,
+                        United
+                        States</p>
+                     <p class="mb-4 text-base font-normal text-coolGray-600">P. 012 345 678 90</p>
+                     <p class="text-base font-normal text-coolGray-600">E. support@themeix.com</p>
+                  </div>
+               </div>
+               <div class="xl:col-span-2 ">
+                  <div data-aos="fade-in" data-aos-duration="500" class="footer-widgets">
+                     <h4 class="mb-6 text-2xl font-bold text-coolGray-900">Web Links</h4>
+                     <ul>
+                        <li data-aos="fade-in" data-aos-duration="500" class="mb-4 "><a
+                              class="text-base font-normal text-coolGray-600 underline-hover"
+                              href="collection.html">Collections</a></li>
+                        <li data-aos="fade-in" data-aos-duration="500" class="mb-4 "><a
+                              class="text-base font-normal text-coolGray-600 underline-hover"
+                              href="single-item-v3.html">Item Details</a></li>
+                        <li data-aos="fade-in" data-aos-duration="500" class="mb-4 "><a
+                              class="text-base font-normal text-coolGray-600 underline-hover"
+                              href="rankings.html">Rankings</a></li>
+                        <li data-aos="fade-in" data-aos-duration="500" class=""><a
+                              class="text-base font-normal text-coolGray-600 underline-hover" href="sign-in.html">User
+                              Profile</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="xl:col-span-2 ">
+                  <div data-aos="fade-in" data-aos-duration="500" class="footer-widgets">
+                     <h4 class="mb-6 text-2xl font-bold text-coolGray-900">My Account</h4>
+                     <ul>
+                        <li data-aos="fade-in" data-aos-duration="500" class="mb-4 "><a
+                              class="text-base font-normal text-coolGray-600 underline-hover"
+                              href="creator-edit.html">Creator Dashboard</a></li>
+                        <li data-aos="fade-in" data-aos-duration="500" class="mb-4 "><a
+                              class="text-base font-normal text-coolGray-600 underline-hover"
+                              href="wallet.html">Wallet</a>
+                        </li>
+                        <li data-aos="fade-in" data-aos-duration="500" class="mb-4 "><a
+                              class="text-base font-normal text-coolGray-600 underline-hover"
+                              href="categories.html">Create Item</a></li>
+                        <li data-aos="fade-in" data-aos-duration="500" class=""><a
+                              class="text-base font-normal text-coolGray-600 underline-hover" href="my-account.html">My
+                              Account</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="sm:text-center copyright-area md:text-right pt-7 md:pt-14">
+               <div class="justify-between md:flex">
+                  <div class="grid flex-col order-first md:order-last">
+                     <ul>
+                        <li data-aos="fade-in" data-aos-duration="500" class="inline-block mr-2"><a
+                              class="text-base text-coolGray-600 underline-hover" href="privacy-policy.html">Privacy
+                              Policy</a></li>
+                        <li data-aos="fade-in" data-aos-duration="500"
+                           class="inline-block mr-2 text-base text-coolGray-600">|</li>
+                        <li data-aos="fade-in" data-aos-duration="500" class="inline-block"><a
+                              class="text-base text-coolGray-600 underline-hover" href="terms.html">Term of
+                              Service</a>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="flex-col">
+                     <p class="text-base font-normal text-coolGray-600">© Copyright - <span id="spanYear"></span>
+                        Tokenbay
+                        - Designed by <a class="text-indigo-500 underline-hover" href="http://themeix.com/">Themeix</a>
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!--  ====================== Footer Area End =============================  -->
+      <!--  ====================== Start Scroll To Top =============================  -->
+      <div
+         class="fixed z-50 w-12 h-12 text-center transition-all rounded-full cursor-pointer scroll-top bottom-1 md:bottom-10 right-1 md:right-10">
+         <div
+            class="p-3 transition duration-500 rounded-md shadow-sm scroll-icon bg-lightBlue-500 hover:bg-blueGray-900">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <path
+                  d="M12.4307 0.696095L12.4309 0.696287L23.2178 13.057H21.0173C21.0014 13.057 20.9935 13.0509 20.9904 13.0473L20.9885 13.045L13.6503 4.63529L12.7736 3.63053V4.96403V23.5H11.2258V4.96403V3.63053L10.3491 4.63529L3.01349 13.0421C3.0032 13.0531 2.99124 13.057 2.98206 13.057H0.781464L11.5652 0.696231L11.5653 0.696095C11.6188 0.634784 11.685 0.585415 11.7597 0.551509C11.8344 0.5176 11.9157 0.5 11.998 0.5C12.0803 0.5 12.1616 0.5176 12.2363 0.551509C12.311 0.585415 12.3773 0.634783 12.4307 0.696095Z"
+                  fill="#6366F1" stroke="#6366F1" />
+            </svg>
+         </div>
+      </div>
+      <!--  ====================== End Scroll To Top =============================  -->
+      <!-- gulp:js -->
+      <script src="assets/js/build.min.js"></script>
+      <!-- endgulp -->
+   </div>
+</body>
+
+</html>
